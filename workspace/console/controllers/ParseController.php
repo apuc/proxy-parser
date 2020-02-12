@@ -15,7 +15,7 @@ class ParseController extends ConsoleController
     {
         $webHtml = new WebHtml();
         $this->out->r('start', 'green');
-        $pageCount = 5;
+        $pageCount = 50;
         Proxy::truncate();
         for ($i = 1; $i <= $pageCount; $i++) {
             $res = $webHtml->getRequestArray(['perpage' => 100, 'p' => $i, 'api_key' => '64f779e78be24a94355746bd26c2fe0e']);
