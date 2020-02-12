@@ -13,3 +13,5 @@ App::$collector->get('/user/{id}', ['workspace\controllers\MainController', 'act
 App::$collector->get('/forms/{id}', ['workspace\controllers\FormsController', 'actionShow']);
 
 App::$collector->crud('/news', ['workspace\controllers\NewsController']);
+
+App::$collector->get('/one-proxy', ['workspace\controllers\ProxyController', 'actionOne']);
